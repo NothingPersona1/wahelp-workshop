@@ -42,6 +42,58 @@
     font-size: 2.3rem;
     color: $primary;
   }
+
+  .offer {
+    width: 100%;
+
+    &_date {
+      margin-top: 5vh;
+      gap: 1rem;
+
+      &__item {
+        font-family: "rfSemibold";
+        font-size: 1.125rem;
+        width: fit-content;
+        border: 1px solid $primary;
+        border-radius: 999px;
+        color: $primary;
+        padding: 8px 22px;
+      }
+    }
+
+    &_caption {
+      margin-top: 6vh;
+
+      span {
+        color: $accent;
+      }
+    }
+  }
+
+  .cta {
+    gap: 1rem;
+
+    &_button {
+      border-radius: 999px;
+      padding: 32px 64px;
+      font-size: 1rem;
+      margin-top: 6vh;
+      width: 100%;
+    }
+
+    &_button:hover {
+      color: $dark !important;
+      background-color: $primary !important;
+      transition-duration: 500ms;
+    }
+
+    &_subtitle {
+      gap: 1rem;
+      color: $primary;
+      font-family: "rfextRegular";
+      font-size: 1.1rem;
+    }
+  }
 }
 
 @media screen and (min-width: 501px) {
@@ -63,6 +115,54 @@
     line-height: 110% !important;
     font-size: 4.5rem;
     color: $primary;
+  }
+
+  .offer {
+    width: 60%;
+
+    &_date {
+      margin-top: 20vh;
+      gap: 2.5rem;
+
+      &__item {
+        font-family: "rfSemibold";
+        font-size: 1.125rem;
+        width: fit-content;
+        border: 1px solid $primary;
+        border-radius: 999px;
+        color: $primary;
+        padding: 8px 24px;
+      }
+    }
+
+    &_caption span {
+      color: $accent;
+    }
+  }
+
+  .cta {
+    gap: 1rem;
+
+    &_button {
+      border-radius: 999px;
+      padding: 32px 64px;
+      font-size: 1.1rem;
+      margin-top: 12vh;
+      width: fit-content;
+    }
+
+    &_button:hover {
+      color: $dark !important;
+      background-color: $primary !important;
+      transition-duration: 500ms;
+    }
+
+    &_subtitle {
+      gap: 1rem;
+      color: $primary;
+      font-family: "rfextRegular";
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -151,4 +251,8 @@ button {
     font-size: 1rem;
     color: $primary;
   }
+}
+
+.q-checkbox__label {
+  color: $primary;
 }
