@@ -1,0 +1,154 @@
+// app global css in SCSS form
+@font-face {
+  font-family: "rfRegular";
+  src: url("~assets/fonts/RFDewi-Regular.woff");
+}
+
+@font-face {
+  font-family: "rfSemibold";
+  src: url("~assets/fonts/RFDewi-Semibold.woff");
+}
+
+@font-face {
+  font-family: "rfexpBold";
+  src: url("~assets/fonts/RFDewiExpanded-Bold.woff");
+}
+
+@font-face {
+  font-family: "rfexpUltrabold";
+  src: url("~assets/fonts/RFDewiExpanded-Ultrabold.woff");
+}
+
+@font-face {
+  font-family: "rfextRegular";
+  src: url("~assets/fonts/RFDewiExtended-Regular.woff");
+}
+
+@font-face {
+  font-family: "rfextUltrabold";
+  src: url("~assets/fonts/RFDewiExtended-Ultrabold.woff");
+}
+
+@media screen and (max-width: 500px) {
+  .q-page {
+    width: 100vw;
+    background: rgb(28, 37, 60);
+  }
+
+  h1,
+  h2 {
+    font-family: "rfextUltrabold";
+    line-height: 120% !important;
+    font-size: 2.3rem;
+    color: $primary;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .q-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(
+      109deg,
+      rgba(28, 37, 60, 1) 64%,
+      rgba(67, 89, 115, 1) 77%,
+      rgba(171, 212, 198, 1) 100%
+    );
+  }
+
+  h1,
+  h2 {
+    font-family: "rfextUltrabold";
+    line-height: 110% !important;
+    font-size: 4.5rem;
+    color: $primary;
+  }
+}
+
+.container {
+  width: 80%;
+}
+
+.logo {
+  max-height: 44px;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+div {
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-family: "rfexpBold";
+  font-size: 2.5rem;
+  color: $primary;
+}
+
+a,
+button {
+  font-family: "rfexpUltrabold" !important;
+  letter-spacing: 0.05em;
+}
+
+.modal {
+  background: rgb(28, 37, 60);
+  min-width: 25%;
+  border-radius: 30px !important;
+  padding-bottom: 60px;
+}
+
+.q-field--standout .q-field__control {
+  border-radius: 12px !important;
+  padding: 0 20px;
+}
+
+.q-field__label {
+  font-family: "rfRegular";
+  font-size: 18px;
+}
+
+.anton {
+  max-height: 85vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.info {
+  position: absolute;
+  right: 12vw;
+  bottom: 10vh;
+  min-width: 20%;
+  max-width: 26%;
+  background: rgba(28, 37, 60, 0.5);
+  box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(28, 37, 60, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 40px;
+  padding: 30px 40px;
+  gap: 1vw;
+
+  &_icon {
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 14px;
+  }
+
+  &_title {
+    font-family: "rfexpUltrabold";
+    font-size: 1.8rem;
+    color: $primary;
+  }
+
+  &_subtitle {
+    font-family: "rfextRegular";
+    font-size: 1rem;
+    color: $primary;
+  }
+}
