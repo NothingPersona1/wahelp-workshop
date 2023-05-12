@@ -12,32 +12,46 @@
             Бесплатный вебинар
           </div>
           <div class="offer_date__item flex items-center">
-            01 января <span class="q-px-sm">•</span> 12:00 МСК
+            25 мая <span class="q-px-sm">•</span> 15:00 МСК
           </div>
         </div>
 
-        <h1 class="offer_caption">Как <span class="text-whaccent">запустить</span> свой чат с клиентами прямо в журнале
-          записи Yclients</h1>
+        <h1 class="offer_caption"><span class="text-whaccent">3 секрета</span> успешного найма сотрудников для создания
+          команды мечты</h1>
+
+        <div class="offer_subtitle desktop-only">Как за 2 дня получить 50 откликов на объявление</div>
       </div>
 
       <div class="cta flex column">
         <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
           @click="modal = true" />
 
-        <div class="cta_subtitle flex row no-wrap">
+        <div class="cta_subtitle flex row no-wrap desktop-only">
           <q-icon size="1.4rem" name="fa fa-gift" />
-          Зарегистрируйся и мы тебя погладим по головке
+          Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
+        </div>
+        <div class="cta_subtitle flex row no-wrap mobile-only">
+          <q-icon size="1.2rem" name="fa fa-gift" />
+          Подключим 5 мессенджеров<br />к вашему чату с клиентами<br />в YCLIENTS
         </div>
       </div>
 
-      <img class="anton desktop-only" src="~assets/images/anton2.png" alt="">
+      <div class="author desktop-only">
+        <img class="author_img" src="~assets/images/yana.png">
+
+        <div class="author_name flex column">
+          <div class="author_name__title">Яна Иванченко</div>
+          <div class="author_name__subtitle">владелец бьюти-студий и бизнес-тренер</div>
+        </div>
+      </div>
 
       <div class="info desktop-only flex row no-wrap">
         <div class="info_icon bg-primary q-pa-md"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
         </div>
         <div>
-          <p class="info_title">Заголовок о том, что будет</p>
-          <p class="info_subtitle">Текст о том, что было, есть и еще только будет на данном вебинаре</p>
+          <p class="info_title">Как решать задачи<br />в бизнесе</p>
+          <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
+            увеличения прибыли</p>
         </div>
       </div>
 

@@ -39,7 +39,7 @@
   h2 {
     font-family: "rfextUltrabold";
     line-height: 120% !important;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: $primary;
   }
 
@@ -47,22 +47,22 @@
     width: 100%;
 
     &_date {
-      margin-top: 5vh;
+      margin-top: 4vh;
       gap: 1rem;
 
       &__item {
         font-family: "rfSemibold";
-        font-size: 1.125rem;
+        font-size: 0.9rem;
         width: fit-content;
-        border: 1px solid $primary;
+        border: 0.5px solid $primary;
         border-radius: 999px;
         color: $primary;
-        padding: 8px 22px;
+        padding: 6px 20px;
       }
     }
 
     &_caption {
-      margin-top: 6vh;
+      margin-top: 5vh;
 
       span {
         color: $accent;
@@ -75,8 +75,8 @@
 
     &_button {
       border-radius: 999px;
-      padding: 32px 64px;
-      font-size: 1rem;
+      padding: 20px 64px;
+      font-size: 0.8rem;
       margin-top: 6vh;
       width: 100%;
     }
@@ -91,7 +91,7 @@
       gap: 1rem;
       color: $primary;
       font-family: "rfextRegular";
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 }
@@ -115,13 +115,14 @@
     line-height: 110% !important;
     font-size: 4.5rem;
     color: $primary;
+    margin: 2rem 0 0 0;
   }
 
   .offer {
     width: 60%;
 
     &_date {
-      margin-top: 20vh;
+      margin-top: 16vh;
       gap: 2.5rem;
 
       &__item {
@@ -138,6 +139,13 @@
     &_caption span {
       color: $accent;
     }
+
+    &_subtitle {
+      margin-top: 5vh;
+      font-family: "rfexpBold";
+      font-size: 1.8rem;
+      color: $primary;
+    }
   }
 
   .cta {
@@ -146,8 +154,8 @@
     &_button {
       border-radius: 999px;
       padding: 32px 64px;
-      font-size: 1.1rem;
-      margin-top: 12vh;
+      font-size: 1.4rem;
+      margin-top: 18vh;
       width: fit-content;
     }
 
@@ -212,16 +220,36 @@ button {
   font-size: 18px;
 }
 
-.anton {
-  max-height: 85vh;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.author {
+  &_img {
+    height: 110vh;
+    position: absolute;
+    right: 5vw;
+    bottom: -3vh;
+  }
+
+  &_name {
+    position: absolute;
+    right: 6vw;
+    top: 8vh;
+
+    &__title {
+      font-family: "rfextRegular";
+      font-size: 1.6rem;
+      color: $primary;
+    }
+
+    &__subtitle {
+      font-family: "rfexpBold";
+      font-size: 0.8rem;
+      color: #cccccc;
+    }
+  }
 }
 
 .info {
   position: absolute;
-  right: 12vw;
+  right: 14vw;
   bottom: 10vh;
   min-width: 20%;
   max-width: 26%;
@@ -231,7 +259,7 @@ button {
   backdrop-filter: blur(4px);
   border-radius: 40px;
   padding: 30px 40px;
-  gap: 1vw;
+  gap: 1.2vw;
 
   &_icon {
     margin-top: 10px;
