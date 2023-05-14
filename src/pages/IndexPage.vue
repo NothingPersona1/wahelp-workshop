@@ -26,8 +26,8 @@
         <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
           @click="modal = true" />
 
-        <div class="cta_subtitle flex row no-wrap desktop-only">
-          <q-icon size="1.4rem" name="fa fa-gift" />
+        <div class="cta_subtitle flex row no-wrap desktop-only q-ml-md">
+          <q-icon size="1.4vw" name="fa fa-gift" />
           Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
         </div>
         <div class="cta_subtitle flex row no-wrap mobile-only">
@@ -41,12 +41,12 @@
 
         <div class="author_name flex column">
           <div class="author_name__title">Яна Иванченко</div>
-          <div class="author_name__subtitle">владелец бьюти-студий и бизнес-тренер</div>
+          <div class="author_name__subtitle">владелец бьюти-студий<br>и бизнес-тренер</div>
         </div>
       </div>
 
       <div class="info desktop-only flex row no-wrap">
-        <div class="info_icon bg-primary q-pa-md"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
+        <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
         </div>
         <div>
           <p class="info_title">Как решать задачи<br />в бизнесе</p>

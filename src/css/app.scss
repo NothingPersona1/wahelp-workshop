@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 501px) and (max-width: 1500px) {
   .q-page {
     width: 100vw;
     height: 100vh;
@@ -113,7 +113,7 @@
   h2 {
     font-family: "rfextUltrabold";
     line-height: 110% !important;
-    font-size: 4.5rem;
+    font-size: 3vw;
     color: $primary;
     margin: 2rem 0 0 0;
   }
@@ -122,12 +122,12 @@
     width: 60%;
 
     &_date {
-      margin-top: 16vh;
+      margin-top: 5vw;
       gap: 2.5rem;
 
       &__item {
         font-family: "rfSemibold";
-        font-size: 1.125rem;
+        font-size: 1vw;
         width: fit-content;
         border: 1px solid $primary;
         border-radius: 999px;
@@ -143,7 +143,7 @@
     &_subtitle {
       margin-top: 5vh;
       font-family: "rfexpBold";
-      font-size: 1.8rem;
+      font-size: 1.4vw;
       color: $primary;
     }
   }
@@ -153,8 +153,8 @@
 
     &_button {
       border-radius: 999px;
-      padding: 32px 64px;
-      font-size: 1.4rem;
+      padding: 1.4vw 3vw;
+      font-size: 1.2vw;
       margin-top: 18vh;
       width: fit-content;
     }
@@ -169,7 +169,209 @@
       gap: 1rem;
       color: $primary;
       font-family: "rfextRegular";
-      font-size: 1.1rem;
+      font-size: 0.9vw;
+    }
+  }
+
+  .info {
+    position: absolute;
+    right: 10vw;
+    bottom: 6vh;
+    min-width: 20%;
+    max-width: 33%;
+    background: rgba(28, 37, 60, 0.5);
+    box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(28, 37, 60, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    padding: 30px 40px;
+    gap: 2vw;
+
+    &_icon {
+      margin-top: 10px;
+      padding: 0.9rem 0.9rem;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 14px;
+    }
+
+    &_title {
+      font-family: "rfexpUltrabold";
+      font-size: 1.4vw;
+      color: $primary;
+    }
+
+    &_subtitle {
+      font-family: "rfextRegular";
+      font-size: 1vw;
+      color: $primary;
+    }
+  }
+
+  .author {
+    &_img {
+      height: 110vh;
+      position: absolute;
+      right: 4vw;
+      bottom: -3vh;
+    }
+
+    &_name {
+      position: absolute;
+      right: 6vw;
+      top: 8vh;
+
+      &__title {
+        font-family: "rfextRegular";
+        font-size: 1.3rem;
+        color: $primary;
+      }
+
+      &__subtitle {
+        font-family: "rfexpBold";
+        font-size: 0.7rem;
+        color: #cccccc;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .q-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(
+      109deg,
+      rgba(28, 37, 60, 1) 64%,
+      rgba(67, 89, 115, 1) 77%,
+      rgba(171, 212, 198, 1) 100%
+    );
+  }
+
+  h1,
+  h2 {
+    font-family: "rfextUltrabold";
+    line-height: 110% !important;
+    font-size: 3vw;
+    color: $primary;
+    margin: 2rem 0 0 0;
+  }
+
+  .offer {
+    width: 60%;
+
+    &_date {
+      margin-top: 5vw;
+      gap: 2.5rem;
+
+      &__item {
+        font-family: "rfSemibold";
+        font-size: 1vw;
+        width: fit-content;
+        border: 1px solid $primary;
+        border-radius: 999px;
+        color: $primary;
+        padding: 8px 24px;
+      }
+    }
+
+    &_caption span {
+      color: $accent;
+    }
+
+    &_subtitle {
+      margin-top: 5vh;
+      font-family: "rfexpBold";
+      font-size: 1.4vw;
+      color: $primary;
+    }
+  }
+
+  .cta {
+    gap: 1rem;
+
+    &_button {
+      border-radius: 999px;
+      padding: 1.4vw 3vw;
+      font-size: 1.2vw;
+      margin-top: 18vh;
+      width: fit-content;
+    }
+
+    &_button:hover {
+      color: $dark !important;
+      background-color: $primary !important;
+      transition-duration: 500ms;
+    }
+
+    &_subtitle {
+      gap: 1rem;
+      color: $primary;
+      font-family: "rfextRegular";
+      font-size: 0.9vw;
+    }
+  }
+
+  .info {
+    position: absolute;
+    right: 14vw;
+    bottom: 10vh;
+    min-width: 20%;
+    max-width: 30%;
+    background: rgba(28, 37, 60, 0.5);
+    box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(28, 37, 60, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    padding: 30px 40px;
+    gap: 1.2vw;
+
+    &_icon {
+      margin-top: 10px;
+      padding: 1rem 1rem;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 14px;
+    }
+
+    &_title {
+      font-family: "rfexpUltrabold";
+      font-size: 1.4vw;
+      color: $primary;
+    }
+
+    &_subtitle {
+      font-family: "rfextRegular";
+      font-size: 0.8vw;
+      color: $primary;
+    }
+  }
+
+  .author {
+    &_img {
+      height: 110vh;
+      position: absolute;
+      right: 5vw;
+      bottom: -3vh;
+    }
+
+    &_name {
+      position: absolute;
+      right: 7vw;
+      top: 8vh;
+
+      &__title {
+        font-family: "rfextRegular";
+        font-size: 1.7rem;
+        color: $primary;
+      }
+
+      &__subtitle {
+        font-family: "rfexpBold";
+        font-size: 0.9rem;
+        color: #cccccc;
+      }
     }
   }
 }
@@ -218,67 +420,6 @@ button {
 .q-field__label {
   font-family: "rfRegular";
   font-size: 18px;
-}
-
-.author {
-  &_img {
-    height: 110vh;
-    position: absolute;
-    right: 5vw;
-    bottom: -3vh;
-  }
-
-  &_name {
-    position: absolute;
-    right: 6vw;
-    top: 8vh;
-
-    &__title {
-      font-family: "rfextRegular";
-      font-size: 1.6rem;
-      color: $primary;
-    }
-
-    &__subtitle {
-      font-family: "rfexpBold";
-      font-size: 0.8rem;
-      color: #cccccc;
-    }
-  }
-}
-
-.info {
-  position: absolute;
-  right: 14vw;
-  bottom: 10vh;
-  min-width: 20%;
-  max-width: 26%;
-  background: rgba(28, 37, 60, 0.5);
-  box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(28, 37, 60, 0.5);
-  backdrop-filter: blur(4px);
-  border-radius: 40px;
-  padding: 30px 40px;
-  gap: 1.2vw;
-
-  &_icon {
-    margin-top: 10px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 14px;
-  }
-
-  &_title {
-    font-family: "rfexpUltrabold";
-    font-size: 1.8rem;
-    color: $primary;
-  }
-
-  &_subtitle {
-    font-family: "rfextRegular";
-    font-size: 1rem;
-    color: $primary;
-  }
 }
 
 .q-checkbox__label {
