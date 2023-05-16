@@ -1,63 +1,70 @@
 <template>
-  <q-page class="flex flex-start column">
-    <div class="container q-py-xl q-px-xl q-mx-auto">
+  <div class="main">
+    <div class="container">
 
-      <div>
-        <img class="logo" src="~assets/images/wahelp-logo.svg" />
+      <div class="logo">
+        <img class="logo__image" src="~assets/images/wahelp-logo.svg" />
       </div>
 
-      <div class="offer flex column">
-        <div class="offer_date flex">
-          <div class="offer_date__item flex items-center">
+      <div class="offer">
+        <div class="offer-date">
+          <div class="offer-date__item">
             Бесплатный вебинар
           </div>
-          <div class="offer_date__item flex items-center">
+          <div class="offer-date__item">
             25 мая <span class="q-px-sm">•</span> 15:00 МСК
+          </div>
+
+          <div class="offer-date__author-name">
+            <div class="author-name">
+              <div class="author-name__title">Яна Иванченко</div>
+              <div class="author-name__subtitle">владелец бьюти-студий<br>и бизнес-тренер</div>
+            </div>
           </div>
         </div>
 
-        <h1 class="offer_caption"><span class="text-whaccent">3 секрета</span> успешного найма сотрудников для создания
-          команды мечты</h1>
-
-        <div class="offer_subtitle desktop-only">Как за 2 дня получить 50 откликов на объявление</div>
-      </div>
-
-      <div class="cta flex column">
-        <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
-          @click="modal = true" />
-
-        <div class="cta_subtitle flex row no-wrap desktop-only q-ml-md">
-          <q-icon size="1.4vw" name="fa fa-gift" />
-          Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
-        </div>
-        <div class="cta_subtitle flex row no-wrap mobile-only">
-          <q-icon size="1.2rem" name="fa fa-gift" />
-          Подключим 5 мессенджеров<br />к вашему чату с клиентами<br />в YCLIENTS
+        <div class="offer-caption">
+          <h1>
+            <span class="text-whaccent">3 секрета</span> успешного найма сотрудников для создания команды мечты
+          </h1>
+          <h2 class="offer-subtitle desktop-only">
+            Как за 2 дня получить 50 откликов на объявление
+          </h2>
         </div>
       </div>
 
-      <div class="author desktop-only">
-        <img class="author_img" src="~assets/images/yana.png">
+      <div class="bottom">
+        <div class="cta">
+          <q-btn class="cta__button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
+            @click="modal = true" />
 
-        <div class="author_name flex column">
-          <div class="author_name__title">Яна Иванченко</div>
-          <div class="author_name__subtitle">владелец бьюти-студий<br>и бизнес-тренер</div>
+          <div class="cta__subtitle desktop-only">
+            <q-icon size="1.4vw" name="fa fa-gift" />
+            Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
+          </div>
+          <div class="cta__subtitle mobile-only">
+            <q-icon size="1.2rem" name="fa fa-gift" />
+            Подключим 5 мессенджеров<br />к вашему чату с клиентами<br />в YCLIENTS
+          </div>
         </div>
-      </div>
 
-      <div class="info desktop-only flex row no-wrap">
-        <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
-        </div>
-        <div>
-          <p class="info_title">Как решать задачи<br />в бизнесе</p>
-          <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
-            увеличения прибыли</p>
+
+        <div class="info">
+          <div class="info__icon bg-primary">
+            <q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
+          </div>
+          <div class="info-description">
+            <p class="info-description__title">Как решать задачи<br />в бизнесе</p>
+            <p class="info-description__subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития
+              бизнеса и
+              увеличения прибыли</p>
+          </div>
         </div>
       </div>
 
     </div>
 
-  </q-page>
+  </div>
 
   <q-dialog transition-show="fade" transition-hide="fade" transition-duration="500" persistent v-model="modal">
     <q-card class="modal">
