@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-start column">
-    <div class="container q-py-xl q-px-xl q-mx-auto">
+    <div class="container q-py-xl q-px-xl q-mx-auto flex column justify-between">
 
       <div>
         <img class="logo" src="~assets/images/wahelp-logo.svg" />
@@ -22,7 +22,7 @@
         <div class="offer_subtitle desktop-only">Как за 2 дня получить 50 откликов на объявление</div>
       </div>
 
-      <div class="cta flex column">
+      <div class="cta flex column q-mb-lg">
         <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
           @click="modal = true" />
 
@@ -36,25 +36,25 @@
         </div>
       </div>
 
-      <div class="author desktop-only">
-        <img class="author_img" src="~assets/images/yana.png">
+    </div>
 
-        <div class="author_name flex column">
-          <div class="author_name__title">Яна Иванченко</div>
-          <div class="author_name__subtitle">владелец бьюти-студий<br>и бизнес-тренер</div>
-        </div>
+    <div class="author desktop-only">
+      <img class="author_img" src="~assets/images/yana.png">
+
+      <div class="author_name flex column">
+        <div class="author_name__title">Яна Иванченко</div>
+        <div class="author_name__subtitle">владелец бьюти-студий<br>и бизнес-тренер</div>
       </div>
+    </div>
 
-      <div class="info desktop-only flex row no-wrap">
-        <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
-        </div>
-        <div>
-          <p class="info_title">Как решать задачи<br />в бизнесе</p>
-          <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
-            увеличения прибыли</p>
-        </div>
+    <div class="info desktop-only flex row no-wrap">
+      <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
       </div>
-
+      <div>
+        <p class="info_title">Как решать задачи<br />в бизнесе</p>
+        <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
+          увеличения прибыли</p>
+      </div>
     </div>
 
   </q-page>
