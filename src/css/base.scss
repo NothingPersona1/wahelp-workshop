@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+p,
+span,
+div {
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-family: "rfexpBold";
+  font-size: 2.5rem;
+  color: $primary;
+}
+
+a,
+button {
+  font-family: "rfexpUltrabold" !important;
+  letter-spacing: 0.05em;
+}
+
+.modal {
+  background: rgb(28, 37, 60);
+  min-width: 25%;
+  border-radius: 30px !important;
+  padding-bottom: 60px;
+}
+
+.q-field--standout .q-field__control {
+  border-radius: 12px !important;
+  padding: 0 20px;
+}
+
+.q-field__label {
+  font-family: "rfRegular";
+  font-size: 18px;
+}
+
+.q-checkbox__label {
+  color: $primary;
+}

@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-start column">
-    <div class="container q-py-xl q-mx-auto">
+    <div class="container q-py-xl q-px-xl q-mx-auto">
 
       <div>
         <img class="logo" src="~assets/images/wahelp-logo.svg" />
@@ -85,12 +85,9 @@
 </template>
 
 <script setup>
-import { useQuasar, useMeta } from 'quasar'
+import { useMeta } from 'quasar'
 import { ref } from 'vue'
 import axios from 'axios'
-
-const $q = useQuasar()
-$q.screen.setSizes({ sm: 500, md: 700, lg: 1000, xl: 2000 })
 
 const metaData = {
   title: 'Вебинар',
