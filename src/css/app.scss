@@ -4,6 +4,8 @@
 .container {
   width: 2000px;
   height: 100%;
+  background: url(~assets/images/yana.png) no-repeat bottom right;
+  background-size: contain;
 
   @media screen and (max-width: 1980px) {
     width: 1560px;
@@ -305,6 +307,7 @@ h2 {
 
 .author {
   &_img {
+    display: none;
     position: absolute;
     height: 1400px;
     right: 200px;
