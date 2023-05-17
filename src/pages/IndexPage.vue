@@ -22,17 +22,29 @@
         <div class="offer_subtitle desktop-only">Как за 2 дня получить 50 откликов на объявление</div>
       </div>
 
-      <div class="cta flex column q-mb-lg">
-        <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
-          @click="modal = true" />
+      <div class="flex row no-wrap justify-between z-top items-end">
+        <div class="cta flex column q-mb-lg">
+          <q-btn class="cta_button" unelevated color="accent" text-color="primary" label="Зарегистрироваться"
+            @click="modal = true" />
 
-        <div class="cta_subtitle flex row no-wrap desktop-only q-ml-md">
-          <q-icon size="1.4vw" name="fa fa-gift" />
-          Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
+          <div class="cta_subtitle flex row no-wrap desktop-only q-ml-md">
+            <q-icon size="1.4vw" name="fa fa-gift" />
+            Подключим 5 мессенджеров к вашему<br />чату с клиентами в YCLIENTS
+          </div>
+          <div class="cta_subtitle flex row no-wrap mobile-only">
+            <q-icon size="1.2rem" name="fa fa-gift" />
+            Подключим 5 мессенджеров<br />к вашему чату с клиентами<br />в YCLIENTS
+          </div>
         </div>
-        <div class="cta_subtitle flex row no-wrap mobile-only">
-          <q-icon size="1.2rem" name="fa fa-gift" />
-          Подключим 5 мессенджеров<br />к вашему чату с клиентами<br />в YCLIENTS
+
+        <div class="info desktop-only flex row no-wrap">
+          <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
+          </div>
+          <div>
+            <p class="info_title">Как решать задачи<br />в бизнесе</p>
+            <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
+              увеличения прибыли</p>
+          </div>
         </div>
       </div>
 
@@ -47,15 +59,7 @@
       </div>
     </div>
 
-    <div class="info desktop-only flex row no-wrap">
-      <div class="info_icon bg-primary"><q-icon size="1.5rem" color="dark" name="fa fa-square-check" />
-      </div>
-      <div>
-        <p class="info_title">Как решать задачи<br />в бизнесе</p>
-        <p class="info_subtitle">Встреча с экспертом для тех, кто ищет работающие решения для развития бизнеса и
-          увеличения прибыли</p>
-      </div>
-    </div>
+
 
   </q-page>
 
