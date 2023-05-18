@@ -63,7 +63,7 @@
 
   </q-page>
 
-  <q-dialog transition-show="fade" transition-hide="fade" transition-duration="500" persistent v-model="modal">
+  <q-dialog class="z-max" transition-show="fade" transition-hide="fade" transition-duration="500" persistent v-model="modal">
     <q-card class="modal">
       <q-card-section class="flex justify-end">
         <q-btn icon="close" color="primary" flat round dense v-close-popup />
