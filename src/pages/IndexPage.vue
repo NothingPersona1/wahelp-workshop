@@ -76,7 +76,7 @@
           <q-input label-color="dark" bg-color="secondary" standout="bg-accent text-primary" v-model="clientName"
             name="name" lazy-rules="ondemand" :rules="[val => !!val || 'Необходимо заполнить']"
             label="Как к вам обращаться?" />
-          <q-input label-color="dark" bg-color="secondary" standout="bg-accent text-primary" v-model.number="clientNumber"
+          <q-input label-color="dark" bg-color="secondary" standout="bg-accent text-primary" v-model="clientNumber"
             name="phone" mask="+7 (###) ### - ####" lazy-rules="ondemand"
             :rules="[val => !!val || 'Необходимо заполнить']" label="Номер телефона" class="q-mt-sm" />
           <q-checkbox size="sm" v-model="checkbox" dark color="dark" label="Принимаю политику конфиденциальности" />
@@ -106,16 +106,18 @@ useMeta(metaData)
 
 const modal = ref(false);
 const clientName = ref('');
-const clientNumber = ref();
+const clientNumber = ref('');
 const checkbox = ref(false);
 
 const onSubmit = () => {
   const formData = {
     name: clientName.value,
-    phone: clientNumber.value,
+    phone: clientNumber.value.replace(/[^+\d]/g, ''),
+    action: 'testbot',
+    formid: 'webinar'
   }
 
-  axios.post('/', formData)
+  axios.post('https://wahelp.ru/ajax/', formData)
     .then(response => {
       console.log(response.data)
     })
