@@ -112,7 +112,7 @@ const checkbox = ref(false);
 const onSubmit = () => {
   const formData = {
     name: clientName.value,
-    phone: clientNumber.value.replace(/[^+\d]/g, ''),
+    phone: clientNumber.value.trim().replace(/[^\d]/g, ''),
     action: 'testbot',
     formid: 'webinar'
   }
