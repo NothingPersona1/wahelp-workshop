@@ -3,6 +3,9 @@
 
 .container {
   width: 2000px;
+  height: 100%;
+  background: url(~assets/images/yana.png) no-repeat bottom right;
+  background-size: contain;
 
   @media screen and (max-width: 1980px) {
     width: 1560px;
@@ -10,6 +13,10 @@
 
   @media screen and (max-width: 1440px) {
     width: 1200px;
+  }
+
+  @media screen and (max-width: 1370px) {
+    width: 1120px;
   }
 
   @media screen and (max-width: 570px) {
@@ -66,6 +73,11 @@ h2 {
     margin: 1.6rem 0 0 0;
   }
 
+  @media screen and (max-width: 1440px) {
+    font-size: 2.2rem;
+    margin: 1.4rem 0 0 0;
+  }
+
   @media screen and (max-width: 570px) {
     font-size: 2.2rem;
   }
@@ -79,21 +91,17 @@ h2 {
   }
 
   &_date {
-    margin-top: 200px;
     gap: 2rem;
 
     @media screen and (max-width: 1920px) {
-      margin-top: 160px;
       gap: 1.4rem;
     }
 
     @media screen and (max-width: 1440px) {
-      margin-top: 120px;
       gap: 1.2rem;
     }
 
     @media screen and (max-width: 570px) {
-      margin-top: 50px;
       gap: 1rem;
     }
 
@@ -143,6 +151,11 @@ h2 {
       margin: 1.6rem 0 0 0;
     }
 
+    @media screen and (max-width: 1370px) {
+      font-size: 1rem;
+      margin: 1.4rem 0 0 0;
+    }
+
     @media screen and (max-width: 570px) {
       font-size: 1rem;
       margin: 1rem 0 0 0;
@@ -158,18 +171,20 @@ h2 {
     width: fit-content;
     padding: 1.8rem 4.4rem;
     font-size: 1.5rem;
-    margin-top: 16rem;
 
     @media screen and (max-width: 1920px) {
       padding: 1.6rem 4rem;
       font-size: 1.2rem;
-      margin-top: 11rem;
     }
 
     @media screen and (max-width: 1440px) {
       padding: 1.3rem 3.4rem;
       font-size: 1.1rem;
-      margin-top: 8rem;
+    }
+
+    @media screen and (max-width: 1370px) {
+      padding: 1.3rem 3.2rem;
+      font-size: 1rem;
     }
 
     @media screen and (max-width: 570px) {
@@ -196,6 +211,10 @@ h2 {
       font-size: 0.9rem;
     }
 
+    @media screen and (max-width: 1370px) {
+      font-size: 0.8rem;
+    }
+
     @media screen and (max-width: 570px) {
       font-size: 0.9rem;
     }
@@ -203,34 +222,33 @@ h2 {
 }
 
 .info {
-  position: absolute;
   background: rgba(28, 37, 60, 0.5);
   box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.1);
   border: 0.5px solid rgba(28, 37, 60, 0.5);
   backdrop-filter: blur(4px);
   border-radius: 40px;
-  right: 240px;
-  bottom: 160px;
-  max-width: 28%;
+  height: fit-content;
+  max-width: 34%;
   padding: 30px 40px;
   gap: 2rem;
 
   @media screen and (max-width: 1920px) {
     border-radius: 30px;
-    right: 160px;
-    bottom: 70px;
-    max-width: 28%;
     padding: 24px 36px;
-    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1680px) {
+    padding: 22px 34px;
   }
 
   @media screen and (max-width: 1440px) {
-    border-radius: 30px;
-    right: 110px;
-    bottom: 50px;
-    max-width: 30%;
+    max-width: 37%;
+    border-radius: 24px;
     padding: 20px 32px;
-    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1370px) {
+    padding: 20px 32px;
   }
 
   &_icon {
@@ -255,8 +273,16 @@ h2 {
       font-size: 1.5rem;
     }
 
+    @media screen and (max-width: 1680px) {
+      font-size: 1.4rem;
+    }
+
     @media screen and (max-width: 1440px) {
       font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 1370px) {
+      font-size: 1.1rem;
     }
   }
 
@@ -272,15 +298,20 @@ h2 {
     @media screen and (max-width: 1440px) {
       font-size: 0.8rem;
     }
+
+    @media screen and (max-width: 1370px) {
+      font-size: 0.7rem;
+    }
   }
 }
 
 .author {
   &_img {
+    display: none;
     position: absolute;
     height: 1400px;
     right: 200px;
-    bottom: -2vh;
+    bottom: -1vh;
 
     @media screen and (max-width: 1920px) {
       height: 1050px;
@@ -290,6 +321,11 @@ h2 {
     @media screen and (max-width: 1440px) {
       height: 840px;
       right: 90px;
+    }
+
+    @media screen and (max-width: 1370px) {
+      height: 710px;
+      right: 110px;
     }
   }
 
@@ -308,6 +344,11 @@ h2 {
       top: 90px;
     }
 
+    @media screen and (max-width: 1370px) {
+      right: 80px;
+      top: 80px;
+    }
+
     &__title {
       font-family: "rfextRegular";
       color: $primary;
@@ -319,6 +360,10 @@ h2 {
 
       @media screen and (max-width: 1440px) {
         font-size: 1.4rem;
+      }
+
+      @media screen and (max-width: 1370px) {
+        font-size: 1.2rem;
       }
     }
 
@@ -333,6 +378,10 @@ h2 {
 
       @media screen and (max-width: 1440px) {
         font-size: 0.7rem;
+      }
+
+      @media screen and (max-width: 1370px) {
+        font-size: 0.6rem;
       }
     }
   }
