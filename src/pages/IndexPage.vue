@@ -72,7 +72,7 @@
         <h3 class="q-ma-none">Оставить заявку</h3>
       </q-card-section>
       <q-card-section class="q-px-xl">
-        <q-form @submit="onSubmit" class="q-mt-xl flex column">
+        <q-form @submit="onSubmit" class="q-mt-xl flex column" id="webinar-form">
           <q-input label-color="dark" bg-color="secondary" standout="bg-accent text-primary" v-model="clientName"
             name="name" lazy-rules="ondemand" :rules="[val => !!val || 'Необходимо заполнить']"
             label="Как к вам обращаться?" />
@@ -109,17 +109,19 @@ const clientName = ref('');
 const clientNumber = ref('');
 const checkbox = ref(false);
 
-const onSubmit = () => {
-  const formData = {
-    name: clientName.value,
-    phone: clientNumber.value.trim().replace(/[^\d]/g, ''),
-    action: 'testbot',
-    formid: 'webinar'
-  }
 
-  axios.post('https://wahelp.ru/ajax/', formData)
+const onSubmit = () => {
+  let data = new FormData()
+  data.append("name", clientName.value);
+  data.append("phone", clientNumber.value.trim().replace(/[^\d]/g, ''));
+  data.append("action", 'testbot');
+  data.append("formid", 'webinar');
+
+  axios.post('https://wahelp.ru/ajax/', data)
     .then(response => {
-      console.log(response.data)
+      if(response.data.location !== '') {
+        location.replace(`https://wahelp.ru${response.data.location}`)
+      }
     })
     .catch(err => {
       console.log(err)
